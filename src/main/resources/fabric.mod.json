@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "handswitchmodupdated",
+  "version": "${version}",
+  "name": "Hand Switch Mod Updated",
+  "description": "This mod need to interact on rp servers with 2 hands, and also ported to 1.19",
+  "authors": [
+    "Pane2k",
+    "Withicality"
+  ],
+  "contact": {
+    "website": "https://withicality.tk",
+    "issues": "https://github.com/Withicality/Hand-Switch-Mod-Updated/issues",
+    "sources": "https://github.com/Withicality/Hand-Switch-Mod-Updated"
+  },
+  "license": "MIT",
+  "icon": "assets/HandSwitchModUpdated/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "withicality.handswitchmodupdated.client.HandSwitchModUpdatedClient"
+    ],
+    "main": [
+      "withicality.handswitchmodupdated.HandSwitchModUpdated"
+    ]
+  },
+  "mixins": [
+    "HandSwitchModUpdated.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "java": ">=17",
+    "fabric-key-binding-api-v1": "*"
+  }
+}
